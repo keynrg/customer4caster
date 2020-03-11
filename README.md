@@ -1,2 +1,3 @@
 # customer4caster
-Customer Demand Predictor
+Electricity Demand Predictors
+
