@@ -1,0 +1,29 @@
+## GENERAL INFORMATION ##
+The given datasets are 15-min electricity usage of Armidale school in three consecutive years (2017, 2018, and 2019) 
+
+When working on this project, there were two tasks that I need to finish:
+  1. Make a 60-timestep predictor to see the general trend of electricity demand in the next 12 hours.
+  2. Make a 12-timestep predictor to see the predicted values of electricity demand in the next 3 hours so that
+    the battery's algorithm can make right decision.
+  3. Output the predictions to a database
+
+Some suggested subtasks are:
+  a. Use the temperature variable.
+  b. Create and use holiday variable?
+  c. Make seasonal prediction
+  d. Make a shifting plot which how close the "moving_window" predict (see shifting_plot.py in the repo)
+
+## Journal ##
+
+-- January 2020 --
+The project started.
+
+-- February, March 2020 --
+I found that just splitting the dataset into X_train and y_train without any preprocessing would easily cause overfitting.
+Therefore, I tried to split the dataset into seasons, train and predict with each season, which did wonder: 
+the mean_RMSE significantly dropped, especially that of the summer because of how I subset it.
+The multivariate model (history and temperature) wasn't as good as the univariate (history) model.
+
+-- Mar 24, 2020 --
+I built the shifting_plot() function. 
+I also noticed that multivariate model (history and temperature) can give better near predictions. UwU
