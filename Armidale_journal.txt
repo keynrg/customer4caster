@@ -20,7 +20,7 @@ The project started.
 
 -- February, March 2020 --
 I found that just splitting the dataset into X_train and y_train without any preprocessing would easily cause overfitting.
-Therefore, I tried to split the dataset into seasons, train and predict with each season, which did wonder: 
+Therefore, I tried to train and predict with each season, which did wonder: 
 the mean_RMSE significantly dropped, especially that of the summer because of how I subset it.
 The multivariate model (history and temperature) wasn't as good as the univariate (history) model.
 
