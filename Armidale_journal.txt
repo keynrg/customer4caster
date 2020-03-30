@@ -27,3 +27,7 @@ The multivariate model (history and temperature) wasn't as good as the univariat
 -- Mar 24, 2020 --
 I built the shifting_plot() function. 
 I also noticed that multivariate model (history and temperature) can give better near predictions. UwU
+
+-- Mar 30, 2020 --
+I created 4 new variables: isHoliday, isNotWorkingHour, isNotSchoolTerm, isWeekend. I used combinely isHoliday and isNotSchoolTerm a to predict Summer. The results weren't noticeable, but I easily got 17.
+I also noticed that the the shape and the size of the Summer dataset makes the training model better.
