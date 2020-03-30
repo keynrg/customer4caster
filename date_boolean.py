@@ -9,3 +9,6 @@ for i in range(len(term)):
   term_date = term_date + a
 
 dataset['isSchoolTerm'] = dataset['Date'].apply(lambda x: 1 if any(x == d for d in term_date) else 0)
+
+# Create a boolean column that tells whether it is working hour 
+dataset['isNotWorkingHour'] = dataset['Time'].apply(lambda x: 0 if (x >= datetime.strptime('09:00:00', '%H:%M:%S').time() and x <=datetime.strptime('18:00:00', '%H:%M:%S').time()) else 1)
